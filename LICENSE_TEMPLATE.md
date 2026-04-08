@@ -1,8 +1,6 @@
 # LICENSE TEMPLATE
 
-Choose a license before publishing.
 
-A common default is MIT:
 
 ```text
 MIT License
