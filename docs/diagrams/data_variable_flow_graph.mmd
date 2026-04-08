@@ -1,0 +1,23 @@
+flowchart LR
+    n4451686["BIDS EEG files"]
+    n4926751["Raw EEG"]
+    n6502737["ROI time series"]
+    n5209827["Windows / Epochs"]
+    n1378334["Candidate grid"]
+    n5593704["ESS / thinning metadata"]
+    n2553390["Granger matrices"]
+    n3115741["LiNGAM matrices"]
+    n5099373["Subject results JSON"]
+    n6441186["Group networks"]
+    n360603["Plots / figures"]
+    n4451686 --> n4926751
+    n4926751 --> n6502737
+    n6502737 --> n5209827
+    n1378334 --> n5209827
+    n5209827 --> n5593704
+    n5209827 --> n2553390
+    n5209827 --> n3115741
+    n2553390 --> n5099373
+    n3115741 --> n5099373
+    n5099373 --> n6441186
+    n6441186 --> n360603

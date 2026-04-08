@@ -1,0 +1,13 @@
+flowchart TD
+    A[Environment check] --> B[Load config and paths]
+    B --> C[Preprocess subject EEG]
+    C --> D[Aggregate channels to ROIs]
+    D --> E[Search epoch length / overlap]
+    E --> F[Create windows]
+    F --> G[Run Granger causality]
+    F --> H[Run VAR-LiNGAM]
+    G --> I[Save subject-level results]
+    H --> I
+    I --> J[Group-level aggregation]
+    J --> K[Visualization]
+    J --> L[Optional classification]

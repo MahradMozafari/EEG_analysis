@@ -1,0 +1,20 @@
+flowchart LR
+    auto_windowing["auto_windowing.py\nauto windowing"]
+    batch["batch.py\nbatch"]
+    causality["causality.py\ncausality"]
+    classification["classification.py\nclassification"]
+    config["config.py\nconfig"]
+    environment["environment.py\nenvironment"]
+    group_analysis["group_analysis.py\ngroup analysis"]
+    helpers["helpers.py\nhelpers"]
+    main["main.py\nmain"]
+    preprocessing["preprocessing.py\npreprocessing"]
+    visualization["visualization.py\nvisualization"]
+    preprocessing --> helpers
+    causality --> helpers
+    batch --> preprocessing
+    batch --> causality
+    group_analysis --> visualization
+    main --> batch
+    main --> config
+    config --> main
