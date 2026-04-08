@@ -1,6 +1,4 @@
-# EEG Causal Connectivity Toolkit
 
-A GitHub-ready repository scaffold for refactoring the original `granger_v5.ipynb` notebook into a maintainable Python package with documentation, diagrams, guide files, and contribution templates.
 
 ## What this repository contains
 
